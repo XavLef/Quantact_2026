@@ -18,8 +18,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 css: ./assets/hotweb.css
 
-url: "https://olicoside.github.io"
-baseurl: "/Quantact-journee-etudiante"
+url: "https://xavlef.github.io"
+baseurl: "/Quantact-journee-etudiante-2026"
 
 # Build settings
 markdown: kramdown
