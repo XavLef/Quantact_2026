@@ -8,6 +8,7 @@
       title:
         fr: "Inscription, accueil et café"
         en: "Registration, Welcome and Coffee"
+        
     - startTime: "9:15"
       endTime: "9:30"
       title:
@@ -15,7 +16,7 @@
         en: "Opening Remarks"
 
     - startTime: "9:30"
-      endTime: "10:00"
+      endTime: "10:05"
       title:
         fr: "A"
         en: "A"
@@ -26,8 +27,8 @@
         fr: "Comité d'organisation"
         en: "Organizing committee"
 
-    - startTime: "10:00"
-      endTime: "10:30"
+    - startTime: "10:05"
+      endTime: "10:40"
       title:
         fr: "B"
         en: "B"
@@ -38,15 +39,15 @@
         fr: "Samaneh Sami Kermani"
         en: "Samaneh Sami Kermani"
 
-    - startTime: "10:30"
-      endTime: "10:55"
+    - startTime: "10:40"
+      endTime: "11:05"
       type: "service"
       title:
         fr: "Pause café (matin)"
         en: "Coffee Break (morning)"
         
-    - startTime: "10:55"
-      endTime: "11:25"
+    - startTime: "11:05"
+      endTime: "11:40"
       title:
         fr: "C"
         en: "C"
@@ -57,8 +58,8 @@
         fr: "Guillaume Philion"
         en: "Guillaume Philion"
 
-    - startTime: "11:25"
-      endTime: "11:55"
+    - startTime: "11:40"
+      endTime: "12:15"
       title:
         fr: "D"
         en: "D"
@@ -69,8 +70,8 @@
         fr: "Émile Gravel"
         en: "Émile Gravel"
 
-    - startTime: "11:55"
-      endTime: "12:10"
+    - startTime: "12:15"
+      endTime: "12:30"
       title:
         fr: "Présentations éclair (1/2)"
         en: "Lightning talks (1/2)"
@@ -81,15 +82,15 @@
         fr: "Comité d'organisation"
         en: "Organizing committee"
         
-    - startTime: "12:10"
-      endTime: "13:25"
+    - startTime: "12:30"
+      endTime: "13:45"
       type: "service"
       title:
         fr: "Dîner"
         en: "Lunch"
 
-    - startTime: "13:25"
-      endTime: "13:55"
+    - startTime: "13:45"
+      endTime: "14:20"
       title:
         fr: "E"
         en: "E"
@@ -100,8 +101,8 @@
         fr: "Comité d'organisation"
         en: "Organizing committee"
         
-    - startTime: "13:55"
-      endTime: "14:25"
+    - startTime: "14:20"
+      endTime: "14:55"
       title:
         fr: "F"
         en: "F"
@@ -112,8 +113,8 @@
         fr: "Mohaé Ange Christian N'guessan"
         en: "Mohaé Ange Christian N'guessan"
 
-    - startTime: "14:25"
-      endTime: "14:40"
+    - startTime: "14:55"
+      endTime: "15:10"
       title:
         fr: "Présentations éclair (2/2)"
         en: "Lightning talks (2/2)"
@@ -124,15 +125,15 @@
         fr: "Comité d'organisation"
         en: "Organizing committee"
         
-    - startTime: "14:40"
-      endTime: "15:05"
+    - startTime: "15:10"
+      endTime: "15:35"
       type: "service"
       title:
         fr: "Pause café (après-midi)"
         en: "Coffee Break (afternoon)"
 
-    - startTime: "15:05"
-      endTime: "15:35"
+    - startTime: "15:35"
+      endTime: "16:10"
       title:
         fr: "G"
         en: "G"
@@ -143,8 +144,8 @@
         fr: "Xavier Lefrançois"
         en: "Xavier Lefrançois"
 
-    - startTime: "15:35"
-      endTime: "16:05"
+    - startTime: "16:10"
+      endTime: "16:45"
       title:
         fr: "H"
         en: "H"
@@ -154,22 +155,16 @@
       chair:
         fr: "Maurin Ahanhanzo (UQAM)"
         en: "Maurin Ahanhanzo (UQAM)"
-    
-    - startTime: "16:20"
-      endTime: "16:55"
+
+    - startTime: "16:45"
+      endTime: "17:00"
       title:
-        fr: "Optimal Investment and Entropy-Regularized Learning Under Stochastic Volatility Models with Portfolio Constraints"
-        en: "Optimal Investment and Entropy-Regularized Learning Under Stochastic Volatility Models with Portfolio Constraints"
-      speaker:
-        fr: "Pertiny Wilfried Nkuize Ketchiekmen (U. Laval)"
-        en: "Pertiny Wilfried Nkuize Ketchiekmen (U. Laval)"
-      chair:
-        fr: "Olivier Côté (U. Laval)"
-        en: "Olivier Côté (U. Laval)"
+        fr: "Mot de clôture et sondage"
+        en: "Closing remarks and survey"
 
     - startTime: "17:00"
-      endTime: "18:00"
+      endTime: "18:30"
       type: "service"
       title:
-        fr: "Conclusion et 5à7"
+        fr: "Conclusion et cinq à sept"
         en: "Conclusion & Reception"
