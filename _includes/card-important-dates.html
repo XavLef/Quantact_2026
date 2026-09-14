@@ -24,11 +24,27 @@
                 <strong>{{ deadline.text }}:</strong>
               {% endif %}
 
-              {% if deadline.timezone %}
-                {{ deadline.date | date: "%B %e, %Y." }} ({{ deadline.timezone }})
-              {% else %}
+              {% assign month = deadline.date | date: "%-m" %}
+
+              <span class="i18n"
+                    data-fr="{{ deadline.date | date: "%e" }} {% case month %}
+                      {% when '1' %}janvier
+                      {% when '2' %}février
+                      {% when '3' %}mars
+                      {% when '4' %}avril
+                      {% when '5' %}mai
+                      {% when '6' %}juin
+                      {% when '7' %}juillet
+                      {% when '8' %}août
+                      {% when '9' %}septembre
+                      {% when '10' %}octobre
+                      {% when '11' %}novembre
+                      {% when '12' %}décembre
+                    {% endcase %} {{ deadline.date | date: "%Y." }}"
+                    data-en="{{ deadline.date | date: "%B %e, %Y." }}">
                 {{ deadline.date | date: "%B %e, %Y." }}
-              {% endif %}
+              </span>
+              {% if deadline.timezone %} ({{ deadline.timezone }}){% endif %}
             </p>
 
             {% if deadline.pass_due %}</del>{% endif %}
