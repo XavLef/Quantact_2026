@@ -3,47 +3,79 @@
     fr: "6 Novembre 2026"
     en: "November 6, 2026"
   timeslots:
+    - startTime: "8:45"
+      endTime: "9:15"
+      title:
+        fr: "Inscription, accueil et café"
+        en: "Registration, welcome and coffee"
     - startTime: "9:15"
+      endTime: "9:30"
+      title:
+        fr: "Mot de bienvenue"
+        en: "Opening Remarks"
+
+    - startTime: "9:30"
       endTime: "10:00"
       title:
-        fr: "Accueil & mot de bienvenue"
-        en: "Welcome & Opening Remarks"
-
-    - startTime: "10:00"
-      endTime: "10:45"
-      title:
-        fr: "From black box To glass box: enhancing actuarial models with GA2Ms"
-        en: "From black box To glass box: enhancing actuarial models with GA2Ms"
+        fr: "A"
+        en: "A"
       speaker:
-        fr: "Philippe Meunier, FCAS"
-        en: "Philippe Meunier, FCAS"
+        fr: "Étienne Larrivée (Co-operators)"
+        en: "Étienne Larrivée (Co-operators)"
       chair:
         fr: "Comité d'organisation"
         en: "Organizing committee"
 
-    - startTime: "10:45"
-      endTime: "11:15"
+      - startTime: "10:00"
+      endTime: "10:30"
+      title:
+        fr: "B"
+        en: "B"
+      speaker:
+        fr: "Maxime Dutil (Concordia)"
+        en: "Maxime Dutil (Concordia)"
+      chair:
+        fr: "Samaneh Sami Kermani"
+        en: "Samaneh Sami Kermani"
+
+    - startTime: "10:30"
+      endTime: "10:55"
       type: "service"
       title:
         fr: "Pause café (matin)"
         en: "Coffee Break (morning)"
-    - startTime: "11:15"
-      endTime: "11:50"
+        
+    - startTime: "10:55"
+      endTime: "11:25"
       title:
-        fr: "Modelling the impacts of climate change on deaths caused by heat and cold waves with age-period-cohort models"
-        en: "Modelling the impacts of climate change on deaths caused by heat and cold waves with age-period-cohort models"
+        fr: "C"
+        en: "C"
       speaker:
-        fr: "Thomas Landry (UQÀM)"
-        en: "Thomas Landry (UQÀM)"
+        fr: "Mélina Apousso (UQAM)"
+        en: "Mélina Apousso (UQAM)"
       chair:
-        fr: "Ahanhanzo Maurin (UQÀM)"
-        en: "Ahanhanzo Maurin (UQÀM)"
-    - startTime: "12:00"
-      endTime: "13:30"
+        fr: "Maurin Ahanhanzo (UQAM)"
+        en: "Maurin Ahanhanzo (UQAM)"
+
+    - startTime: "11:25"
+      endTime: "11:55"
+      title:
+        fr: "Présentations éclair"
+        en: "Lightning talks"
+      speaker:
+        fr: "?"
+        en: "?"
+      chair:
+        fr: "Comité d'organisation"
+        en: "Organizing committee"
+        
+    - startTime: "11:55"
+      endTime: "13:10"
       type: "service"
       title:
         fr: "Dîner"
         en: "Lunch"
+        
     - startTime: "13:30"
       endTime: "14:05"
       title:
