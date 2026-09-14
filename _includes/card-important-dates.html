@@ -18,7 +18,9 @@
                         data-fr="{{ deadline.text.fr | escape }}"
                         data-en="{{ deadline.text.en | default: deadline.text.fr | escape }}">
                     {{ deadline.text.fr | escape }}
-                  </span>:
+                  </span><span class="i18n"
+                        data-fr="&nbsp;:"
+                        data-en=":"> :</span>
                 </strong>
               {% else %}
                 <strong>{{ deadline.text }}:</strong>
