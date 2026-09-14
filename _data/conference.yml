@@ -9,7 +9,7 @@ languages:
     short_title: Journée étudiante Quantact
     description: >
       La Journée étudiante Quantact présente les travaux de recherche...
-    location: Université Laval, Québec
+    location: Université du Québec à Montréal
     date: 6 Novembre 2026
     logo_path: /assets/images/jeq_logo.png
   en:
@@ -17,7 +17,7 @@ languages:
     short_title: Quantact Student Day
     description: >
       The Quantact Student Day showcases research...
-    location: Université Laval, Québec
+    location: Université du Québec à Montréal
     date: November 6, 2026
     logo_path: /assets/images/qsd_logo.png
 
