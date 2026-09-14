@@ -51,17 +51,29 @@
         fr: "C"
         en: "C"
       speaker:
-        fr: "Mélina Apousso (UQAM)"
-        en: "Mélina Apousso (UQAM)"
+        fr: "Maya Deschamps (UdeS)"
+        en: "Maya Deschamps (UdeS)"
       chair:
-        fr: "Maurin Ahanhanzo (UQAM)"
-        en: "Maurin Ahanhanzo (UQAM)"
+        fr: "Guillaume Philion"
+        en: "Guillaume Philion"
 
     - startTime: "11:25"
       endTime: "11:55"
       title:
-        fr: "Présentations éclair"
-        en: "Lightning talks"
+        fr: "D"
+        en: "D"
+      speaker:
+        fr: "Sarah Yu (HEC)"
+        en: "Sarah Yu (HEC)"
+      chair:
+        fr: "Émile Gravel"
+        en: "Émile Gravel"
+
+    - startTime: "11:55"
+      endTime: "12:10"
+      title:
+        fr: "Présentations éclair (1/2)"
+        en: "Lightning talks (1/2)"
       speaker:
         fr: "?"
         en: "?"
@@ -69,66 +81,79 @@
         fr: "Comité d'organisation"
         en: "Organizing committee"
         
-    - startTime: "11:55"
-      endTime: "13:10"
+    - startTime: "12:10"
+      endTime: "13:25"
       type: "service"
       title:
         fr: "Dîner"
         en: "Lunch"
-        
-    - startTime: "13:10"
-      endTime: "13:40"
+
+    - startTime: "13:25"
+      endTime: "13:55"
       title:
-        fr: "D"
-        en: "D"
+        fr: "E"
+        en: "E"
       speaker:
-        fr: "Criscent Birungi (HEC)"
-        en: "Criscent Birungi (HEC)"
+        fr: "Euodia Mehetabel (12 crêpes)"
+        en: "Euodia Mehetabel (12 crêpes)"
       chair:
-        fr: "Émile Gravel"
-        en: "Émile Gravel"
+        fr: "Comité d'organisation"
+        en: "Organizing committee"
         
-    - startTime: "14:05"
+    - startTime: "13:55"
+      endTime: "14:25"
+      title:
+        fr: "F"
+        en: "F"
+      speaker:
+        fr: "Annabelle Tremblay (UdeM)"
+        en: "Annabelle Tremblay (UdeM)"
+      chair:
+        fr: "Mohaé Ange Christian N'guessan"
+        en: "Mohaé Ange Christian N'guessan"
+
+    - startTime: "14:25"
       endTime: "14:40"
       title:
-        fr: "Tarification des options américaines sur un ordinateur quantique"
-        en: "Tarification des options américaines sur un ordinateur quantique"
+        fr: "Présentations éclair (2/2)"
+        en: "Lightning talks (2/2)"
       speaker:
-        fr: "Julie Bélanger (UdeS)"
-        en: "Julie Bélanger (UdeS)"
+        fr: "?"
+        en: "?"
       chair:
-        fr: "Iro René Kouarfate (UdeS)"
-        en: "Iro René Kouarfate (UdeS)"
+        fr: "Comité d'organisation"
+        en: "Organizing committee"
+        
     - startTime: "14:40"
-      endTime: "15:10"
+      endTime: "15:05"
       type: "service"
       title:
         fr: "Pause café (après-midi)"
         en: "Coffee Break (afternoon)"
 
-    - startTime: "15:10"
-      endTime: "15:45"
+    - startTime: "15:05"
+      endTime: "15:35"
       title:
-        fr: "Beyond volatility of volatility: Decomposing the informational content of VVIX"
-        en: "Beyond volatility of volatility: Decomposing the informational content of VVIX"
+        fr: "G"
+        en: "G"
       speaker:
-        fr: "Étienne Bacon (HEC Montréal)"
-        en: "Étienne Bacon (HEC Montréal)"
+        fr: "Félix Côté (UL)"
+        en: "Félix Côté (UL)"
       chair:
-        fr: "À déterminer"
-        en: "TBD"
+        fr: "Xavier Lefrançois"
+        en: "Xavier Lefrançois"
 
-    - startTime: "15:45"
-      endTime: "16:20"
+    - startTime: "15:35"
+      endTime: "16:05"
       title:
-        fr: "Modeling Fixed Income Funds and Option Pricing: A Yield Curve-Driven Approach"
-        en: "Modeling Fixed Income Funds and Option Pricing: A Yield Curve-Driven Approach"
+        fr: "H"
+        en: "H"
       speaker:
-        fr: "Wuding Li (UdeM)"
-        en: "Wuding Li (UdeM)"
+        fr: "Mélina Apousso (UQAM)"
+        en: "Mélina Apousso (UQAM)"
       chair:
-        fr: "Olivier Poulin (UdeM)"
-        en: "Olivier Poulin (UdeM)"
+        fr: "Maurin Ahanhanzo (UQAM)"
+        en: "Maurin Ahanhanzo (UQAM)"
     
     - startTime: "16:20"
       endTime: "16:55"
