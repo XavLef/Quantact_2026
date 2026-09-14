@@ -19,7 +19,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 css: ./assets/hotweb.css
 
 url: "https://xavlef.github.io"
-baseurl: "/Quantact-journee-etudiante-2026"
+baseurl: "/Quantact_2026"
 
 # Build settings
 markdown: kramdown
