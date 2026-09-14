@@ -41,7 +41,7 @@
     {% when '11' %}novembre
     {% when '12' %}décembre
   {% endcase %} {{ news_entry.date | date: "%Y" }}
-</span> –
+</span> &nbsp;—&nbsp;
             {% if news_entry.text.fr or news_entry.text.en %}
               <span class="i18n"
                     data-fr="{{ news_entry.text.fr | escape }}"
