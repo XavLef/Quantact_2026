@@ -88,18 +88,27 @@ social_media:
   twitter_link:
 
 program_chair:
-  - name: Ahanhanzo Maurin
+  - name: Maurin Ahanhanzo
     org: Université du Québec à Montréal
     homepage: 
-  - name: Iro René Kouarfate
+  - name: Vigny-Ange Sidjui Emakwa
+    org: Université du Québec à Montréal
+    homepage:
+  - name: Guillaume Philion
     org: Université de Sherbrooke
     homepage: 
-  - name: Olivier Côté
+  - name: Xavier Lefrançois
     org: Université Laval
-    homepage: https://olicoside.github.io/
-  - name: Olivier Poulin
+    homepage:
+  - name: Mohaé Ange Christian N'guessan
     org: Université de Montréal
     homepage: 
   - name: Samaneh Sami Kermani
     org: Concordia University
+    homepage: 
+  - name: Abena Farcor
+    org: Concordia University
+    homepage: 
+  - name: Émile Gravel
+    org: HEC Montréal
     homepage: 
