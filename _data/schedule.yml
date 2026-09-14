@@ -26,7 +26,7 @@
         fr: "Comité d'organisation"
         en: "Organizing committee"
 
-      - startTime: "10:00"
+    - startTime: "10:00"
       endTime: "10:30"
       title:
         fr: "B"
@@ -76,17 +76,18 @@
         fr: "Dîner"
         en: "Lunch"
         
-    - startTime: "13:30"
-      endTime: "14:05"
+    - startTime: "13:10"
+      endTime: "13:40"
       title:
-        fr: "Optimal annuitization with labor income under age-dependent force of mortality"
-        en: "Optimal annuitization with labor income under age-dependent force of mortality"
+        fr: "D"
+        en: "D"
       speaker:
-        fr: "Criscent Birungi (Concordia)"
-        en: "Criscent Birungi (Concordia)"
+        fr: "Criscent Birungi (HEC)"
+        en: "Criscent Birungi (HEC)"
       chair:
-        fr: "Samaneh Sami Kermani (Concordia)"
-        en: "Samaneh Sami Kermani (Concordia)"
+        fr: "Émile Gravel"
+        en: "Émile Gravel"
+        
     - startTime: "14:05"
       endTime: "14:40"
       title:
