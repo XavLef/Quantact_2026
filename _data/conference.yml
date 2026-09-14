@@ -5,20 +5,20 @@ email_Xavier: xavier.lefrancois.1@ulaval.ca
 
 languages:
   fr:
-    full_title: Journée Étudiante Quantact 2025
-    short_title: Journée Étudiante Quantact
+    full_title: Journée étudiante Quantact 2026
+    short_title: Journée étudiante Quantact
     description: >
-      La Journée Étudiante Quantact présente les travaux de recherche...
-    location: Université Laval, Québec, 2025
-    date: 3 Octobre 2025
+      La Journée étudiante Quantact présente les travaux de recherche...
+    location: Université Laval, Québec
+    date: 6 Novembre 2026
     logo_path: /assets/images/jeq_logo.png
   en:
-    full_title: Quantact Student Day 2025
+    full_title: Quantact Student Day 2026
     short_title: Quantact Student Day
     description: >
       The Quantact Student Day showcases research...
-    location: Université Laval, Quebec, 2025
-    date: October 3, 2025
+    location: Université Laval, Québec
+    date: November 6, 2026
     logo_path: /assets/images/qsd_logo.png
 
 default_language: fr
