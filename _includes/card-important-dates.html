@@ -1,0 +1,44 @@
+<div class="card">
+  <div class="card-header text-white bg-inverse">
+    <i class="fa fa-calendar-o mr-3" aria-hidden="true"></i>
+    <strong class="i18n" data-fr="Dates importantes" data-en="Important Dates">Dates importantes</strong>
+  </div>
+
+  <div class="card-block bg-faded">
+    <ul class="list-group list-group-flush">
+      {% if site.data.conference.deadlines %}
+        {% for deadline in site.data.conference.deadlines %}
+          <li class="list-group-item bg-faded text-muted">
+            {% if deadline.pass_due %}<del>{% endif %}
+
+            <p>
+              {% if deadline.text.fr or deadline.text.en %}
+                <strong>
+                  <span class="i18n"
+                        data-fr="{{ deadline.text.fr | escape }}"
+                        data-en="{{ deadline.text.en | default: deadline.text.fr | escape }}">
+                    {{ deadline.text.fr | escape }}
+                  </span>:
+                </strong>
+              {% else %}
+                <strong>{{ deadline.text }}:</strong>
+              {% endif %}
+
+              {% if deadline.timezone %}
+                {{ deadline.date | date: "%B %e, %Y." }} ({{ deadline.timezone }})
+              {% else %}
+                {{ deadline.date | date: "%B %e, %Y." }}
+              {% endif %}
+            </p>
+
+            {% if deadline.pass_due %}</del>{% endif %}
+          </li>
+        {% endfor %}
+      {% else %}
+        <li class="list-group-item bg-faded text-muted i18n"
+            data-fr="À venir"
+            data-en="TBA">À venir</li>
+      {% endif %}
+    </ul>
+  </div>
+</div>

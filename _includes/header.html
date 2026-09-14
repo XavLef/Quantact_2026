@@ -1,0 +1,120 @@
+<header class="site-header">
+  {% assign C = site.data.conference %}
+  {% assign lang = page.lang | default: C.default_language %}
+
+  <div class="row">
+    <!-- conference info -->
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-5 col-xl-4 offset-xl-1">
+      <div class="jumbotron" style="background-color: white; min-height: 300px; padding: 2.5rem;">
+        {% assign logo_fr = C.languages.fr.logo_path | relative_url %}
+        {% assign logo_en = C.languages.en.logo_path | relative_url %}
+
+        <img id="siteLogo"
+            class="img-fluid"
+            src="{{ logo_fr }}"
+            data-src-fr="{{ logo_fr }}"
+            data-src-en="{{ logo_en }}"
+            alt="Logo">
+
+        <h5 class="text-center mt-0 i18n"
+            data-fr="{{ C.languages.fr.date }}"
+            data-en="{{ C.languages.en.date }}">
+        {{ C.languages.fr.date }}
+        </h5>
+        <p class="text-center mb-0 i18n"
+        data-fr="{{ C.languages.fr.location }}"
+        data-en="{{ C.languages.en.location }}">
+        {{ C.languages.fr.location }}
+        </p>
+
+      </div>
+    </div>
+
+    <!-- slide show -->
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-7 col-xl-6">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          {% for slide in C.slideshow %}
+            {% if page.slide_id and page.slide_id == slide.id %}
+              <div class="carousel-item active">
+            {% else %}
+              <div class="carousel-item">
+            {% endif %}
+                <img class="img-fluid" src="{{ slide.image_path | relative_url }}" alt="{{ slide.description }}">
+                <div class="carousel-caption d-none d-md-block text-muted">
+                  <p class="align-bottom">
+                    {{ slide.description }}, by <a href="{{ slide.photographer_link }}">{{ slide.photographer_name }}</a>,
+                    under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">Creative Commons license</a>.
+                  </p>
+                </div>
+              </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- navbar -->
+    <div class="mynav col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-10 offset-xl-1">
+      <nav class="nav navbar-toggleable-sm navbar-inverse">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <a class="navbar-brand" href="#"> </a>
+
+          <ul class="navbar-nav mx-auto text-center">
+            {% for nav in C.navbar %}
+                {% if nav.visible %}
+                {% assign is_toggle = nav.class == "language-toggle" %}
+                {% unless is_toggle %}
+                    {% assign href = nav.path | relative_url %}
+                    {% assign label_fr = nav.label.fr %}
+                    {% assign label_en = nav.label.en %}
+                    {% assign cur = page.url | replace:'index.html','' %}
+                    {% assign active = cur == nav.path %}
+                    <li class="nav-item{% if active %} active{% endif %}">
+                    <a class="nav-link m-1"
+                        href="{{ href }}"
+                        data-fr="{{ label_fr | escape }}"
+                        data-en="{{ label_en | escape }}"
+                        {% if active %}aria-current="page"{% endif %}>
+                        <strong><span class="nav-label" data-fr="{{ label_fr | escape }}" data-en="{{ label_en | escape }}">{{ label_fr | escape }}</span></strong>
+                    </a>
+                    </li>
+
+                {% endunless %}
+                {% endif %}
+            {% endfor %}
+            </ul>
+
+
+
+          <ul class="navbar-nav ml-auto align-items-center">
+            {%- comment -%} Language toggle button (no /en path) {%- endcomment -%}
+            <li class="nav-item">
+                {%- assign cur = page.url | replace:'index.html','' | relative_url -%}
+                {%- comment -%}
+                Fallback href (non-JS): current page with ?lang=en.
+                JS will intercept clicks and flip fr<->en without leaving the repo path.
+                {%- endcomment -%}
+                <a id="langToggle" href="#" class="lang-toggle fr" aria-label="Switch language">
+                <span class="knob"></span>
+                <span class="label fr">FR</span>
+                <span class="label en">EN</span>
+                </a>
+
+
+
+            </li>
+            </ul>
+
+
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>

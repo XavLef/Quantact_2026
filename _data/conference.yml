@@ -1,0 +1,105 @@
+full_title: Journée Étudiante Quantact 2025
+short_title: Journée Étudiante Quantact
+email: Iro.Rene.Kouarfate@USherbrooke.ca
+
+languages:
+  fr:
+    full_title: Journée Étudiante Quantact 2025
+    short_title: Journée Étudiante Quantact
+    description: >
+      La Journée Étudiante Quantact présente les travaux de recherche...
+    location: Université Laval, Québec, 2025
+    date: 3 Octobre 2025
+    logo_path: /assets/images/jeq_logo.png
+  en:
+    full_title: Quantact Student Day 2025
+    short_title: Quantact Student Day
+    description: >
+      The Quantact Student Day showcases research...
+    location: Université Laval, Quebec, 2025
+    date: October 3, 2025
+    logo_path: /assets/images/qsd_logo.png
+
+default_language: fr
+
+slideshow:
+  - id: 0
+    image_path: /assets/images/slideshow/img_0.png
+    description: ""
+    photographer_name: ""
+    photographer_link: ""
+  - id: 1
+    image_path: /assets/images/slideshow/img_1.png
+    description: ""
+    photographer_name: ""
+    photographer_link: ""
+  - id: 2
+    image_path: /assets/images/slideshow/img_2.png
+    description: ""
+    photographer_name: ""
+    photographer_link: ""
+  - id: 3
+    image_path: /assets/images/slideshow/img_3.png
+    description: ""
+    photographer_name: ""
+    photographer_link: ""
+
+navbar:
+  - id: 0
+    label: { fr: "Accueil", en: "Home" }
+    path: /index.html
+    visible: true
+  - id: 3
+    label: { fr: "Programme", en: "Program" }
+    path: /program.html
+    visible: true
+  - id: 4
+    label: { fr: "Trouver l'endroit", en: "Venue" }
+    path: /venue.html
+    visible: true
+  - id: 5
+    label: { fr: "S'inscrire", en: "Register" }
+    path: /registration.html
+    visible: true
+  - id: 6
+    label: { fr: "EN", en: "FR" }
+    path: "#"
+    class: "language-toggle"
+    visible: true
+
+news:
+  - date: 2025-08-15
+    text: { fr: "Site en ligne", en: "Website online" }
+  - date: 2025-07-31
+    text: { fr: "Formation du comité", en: "Committee formed" }
+
+deadlines:
+  - date: 2025-10-03
+    text: { fr: "Journée étudiante Quantact 2025", en: "Quantact Student Day 2025" }
+  - date: 2025-08-18
+    text: { fr: "Inscriptions ouvertes", en: "Registration open" }
+
+sponsors:
+  - name: Quantact
+    logo_path: /assets/images/sponsors/logo_quantact.png
+
+social_media:
+  facebook_link: 
+  twitter_link:
+
+program_chair:
+  - name: Ahanhanzo Maurin
+    org: Université du Québec à Montréal
+    homepage: 
+  - name: Iro René Kouarfate
+    org: Université de Sherbrooke
+    homepage: 
+  - name: Olivier Côté
+    org: Université Laval
+    homepage: https://olicoside.github.io/
+  - name: Olivier Poulin
+    org: Université de Montréal
+    homepage: 
+  - name: Samaneh Sami Kermani
+    org: Concordia University
+    homepage: 

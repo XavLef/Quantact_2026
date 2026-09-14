@@ -1,0 +1,143 @@
+---
+layout: page
+slide_id: 2
+---
+
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
+
+    {% for day in site.data.schedule %}
+    <div>
+      <!-- Day heading (live i18n) -->
+      <h4 class="schedule-table-heading i18n"
+          data-fr="{{ day.dateReadable.fr }}"
+          data-en="{{ day.dateReadable.en }}">
+        {{ day.dateReadable.fr }}
+      </h4>
+
+      <table class="table table-bordered table-hover table-responsive table-sm schedule-table">
+
+        {% for timeslot in day.timeslots %}
+          <!-- Robust slot classification (FR + EN keywords) -->
+          {% assign t_fr = timeslot.title.fr | default: timeslot.title | downcase %}
+          {% assign t_en = timeslot.title.en | default: timeslot.title | downcase %}
+
+          {% assign slot_class = "bg-primary text-center" %}
+          {% if timeslot.type == "service" %}
+            {% assign slot_class = "bg-warning text-center" %}
+          {% endif %}
+
+          <!-- Coffee / Break keywords (fr/en) -->
+          {% if t_fr contains "pause" or t_fr contains "café" or t_en contains "coffee" or t_en contains "break" or t_fr contains "dîner" or t_fr contains "diner" or t_fr contains "repas" or t_en contains "lunch" or t_en contains "dinner" or t_en contains "meal" %}
+            {% assign slot_class = "bg-coffee text-center" %}
+          {% endif %}
+
+          <!-- Keynote keywords (fr/en) -->
+          {% if t_fr contains "glass" or t_en contains "glass" %}
+            {% assign slot_class = "bg-keynote text-center" %}
+          {% endif %}
+
+
+          <thead>
+            <tr>
+              <th class="time-header"><div>{{ timeslot.startTime }}-{{ timeslot.endTime }}</div></th>
+              <th class="{{ slot_class }}">
+                {% if timeslot.type == "service" %}
+                  <!-- Service row title (live i18n if provided, else FR fallback) -->
+                  {% if timeslot.title.fr and timeslot.title.en %}
+                    <p class="text-muted m-0 i18n"
+                       data-fr="{{ timeslot.title.fr }}"
+                       data-en="{{ timeslot.title.en }}">
+                      {{ timeslot.title.fr }}
+                    </p>
+                  {% else %}
+                    <p class="text-muted m-0">{{ timeslot.title[page.lang] | default: timeslot.title }}</p>
+                  {% endif %}
+                {% else %}
+                  <!-- Regular session title (live i18n if provided) -->
+                  {% if timeslot.title.fr and timeslot.title.en %}
+                    <h5 class="m-0 i18n"
+                        data-fr="{{ timeslot.title.fr }}"
+                        data-en="{{ timeslot.title.en }}">
+                      {{ timeslot.title.fr }}
+                    </h5>
+                  {% else %}
+                    <h5 class="m-0">{{ timeslot.title[page.lang] | default: timeslot.title }}</h5>
+                  {% endif %}
+
+                  <!-- Speaker (live i18n if provided) -->
+                  {% if timeslot.speaker %}
+                    {% if timeslot.speaker.fr and timeslot.speaker.en %}
+                      <h5 class="m-0 i18n"
+                          data-fr="{{ timeslot.speaker.fr }}"
+                          data-en="{{ timeslot.speaker.en }}">
+                        {{ timeslot.speaker.fr }}
+                      </h5>
+                    {% else %}
+                      <h5 class="m-0">{{ timeslot.speaker[page.lang] | default: timeslot.speaker }}</h5>
+                    {% endif %}
+                  {% endif %}
+
+                  <!-- Chair label + name (live i18n if provided) -->
+                  {% if timeslot.chair %}
+                    <h6 class="m-0">
+                      <span class="i18n"
+                            data-fr="Présidence de séance :"
+                            data-en="Session chair:">Présidence de séance :</span>
+                      {% if timeslot.chair.fr and timeslot.chair.en %}
+                        <span class="i18n"
+                              data-fr="{{ timeslot.chair.fr }}"
+                              data-en="{{ timeslot.chair.en }}">{{ timeslot.chair.fr }}</span>
+                      {% else %}
+                        <span>{{ timeslot.chair[page.lang] | default: timeslot.chair }}</span>
+                      {% endif %}
+                    </h6>
+                  {% endif %}
+                {% endif %}
+              </th>
+            </tr>
+          </thead>
+
+          {% if timeslot.events %}
+          <tbody>
+            {% for event in timeslot.events %}
+              <tr>
+                <td class="time-col" width="20%">&nbsp;</td>
+                <td>
+                  <!-- Event title (fallback-safe) -->
+                  <p class="mb-1">
+                    {% if event.title and event.title.fr and event.title.en %}
+                      <b class="i18n" data-fr="{{ event.title.fr }}" data-en="{{ event.title.en }}">
+                        {{ event.title.fr }}
+                      </b>
+                    {% else %}
+                      <b>{{ event.title[page.lang] | default: event.title }}</b>
+                    {% endif %}
+                  </p>
+
+                  <!-- Event speakers (fallback-safe) -->
+                  {% if event.speakers %}
+                    <p class="mb-0">
+                      {% if event.speakers.fr and event.speakers.en %}
+                        <i class="i18n" data-fr="{{ event.speakers.fr }}" data-en="{{ event.speakers.en }}">
+                          {{ event.speakers.fr }}
+                        </i>
+                      {% else %}
+                        <i>{{ event.speakers[page.lang] | default: event.speakers }}</i>
+                      {% endif %}
+                    </p>
+                  {% endif %}
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+          {% endif %}
+
+        {% endfor %}
+      </table>
+    </div>
+    {% endfor %}
+
+    {% include contact-us.html %}
+  </div>
+</div>

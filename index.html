@@ -1,0 +1,133 @@
+---
+layout: page
+slide_id: 0
+---
+
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-justify conference-text">
+
+    <h5 class="i18n"
+        data-fr="Bienvenue sur la page de la journée étudiante Quantact 2025!"
+        data-en="Welcome to the Quantact Student Day 2025 page!">
+      Bienvenue sur la page de la journée étudiante Quantact 2025!
+    </h5>
+
+  <p class="i18n"
+            data-fr="La journée étudiante Quantact 2025 aura lieu le 3 octobre 2025 à l'Université Laval."
+            data-en="The Quantact Student Day 2025 will take place on October 3, 2025 at Université Laval.">
+        La journée étudiante Quantact 2025 aura lieu le 3 octobre 2025 à l'Université Laval.
+      </p>
+
+    <div class="text-center">
+  <a href="#poster-lightbox">
+    <img src="/Quantact-journee-etudiante/assets/pdfs/journee_etudiante_quantact_prod.jpg"
+         alt="Aperçu de l'affiche"
+         class="img-fluid"
+         style="max-width: 300px; border: 1px solid #ccc;" />
+  </a>
+
+  <p class="small text-muted mt-2 i18n"
+     data-fr="Cliquez sur l'affiche pour l'agrandir."
+     data-en="Click the poster to enlarge it.">
+    Cliquez sur l'affiche pour l'agrandir.
+  </p>
+</div>
+
+<!-- Lightbox Modal -->
+<div id="poster-lightbox" class="lightbox">
+  <a href="#" class="lightbox-close">✕</a>
+  <img src="/Quantact-journee-etudiante/assets/pdfs/journee_etudiante_quantact_prod.jpg"
+       alt="Affiche en plein écran"
+       class="lightbox-img" />
+</div>
+
+
+    <p class="i18n"
+       data-fr="Les présentations couvriront les initiatives de recherche en actuariat des universités affiliées à Quantact:"
+       data-en="Presentations will cover actuarial research initiatives from universities affiliated with Quantact:">
+      Les présentations couvriront les initiatives de recherche en actuariat des universités affiliées à Quantact:
+    </p>
+
+    <ul>
+      <li>Université Laval</li>
+      <li>Université de Sherbrooke</li>
+      <li>Université du Québec à Montréal</li>
+      <li>Université Concordia</li>
+      <li>Université de Montréal</li>
+      <li>HEC Montréal</li>
+    </ul>
+
+    <h6 class="i18n"
+        data-fr="Objectifs"
+        data-en="Objectives">
+    Objectifs
+    </h6>
+    <ul>
+    <li>
+        <span class="i18n"
+            data-fr="Diffuser la recherche étudiante de Quantact."
+            data-en="Showcase Quantact students’ research.">
+        Diffuser la recherche étudiante de Quantact.
+        </span>
+    </li>
+    <li>
+        <span class="i18n"
+            data-fr="Renforcer les liens entre les six programmes membres."
+            data-en="Strengthen collaboration across the six member programs.">
+        Renforcer les liens entre les six programmes membres.
+        </span>
+    </li>
+    <li>
+        <span class="i18n"
+            data-fr="Promouvoir la recherche auprès des étudiants de premier cycle."
+            data-en="Promote research to undergraduate students.">
+        Promouvoir la recherche auprès des étudiants de premier cycle.
+        </span>
+    </li>
+    </ul>
+
+
+    {% include contact-us.html %}
+
+  </div>
+
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+
+    <!--######### important dates ##########-->
+    {% include card-important-dates.html %}
+    <!--######### news #####################-->
+    {% include card-news.html %}
+
+    <!--######### Organizing Committee ##########-->
+    <div class="card">
+      <div class="card-header text-white bg-inverse">
+        <strong class="i18n"
+                data-fr="Comité d'organisation"
+                data-en="Organizing Committee">
+          Comité d'organisation
+        </strong>
+      </div>
+
+      {% if site.data.conference.program_chair %}
+        {% for committee in site.data.conference.program_chair %}
+          <div class="card-block bg-faded committee">
+            {% if committee.homepage %}
+              <p><a href="{{ committee.homepage }}"><strong>{{ committee.name }}</strong></a></p>
+            {% else %}
+              <p><strong>{{ committee.name }}</strong></p>
+            {% endif %}
+            <p class="card-subtitle text-muted" style="font-size: 90%;">{{ committee.org }}</p>
+          </div>
+        {% endfor %}
+      {% else %}
+        <div class="card-block bg-faded committee">
+          <p class="card-title">TBA</p>
+          <p><strong>TBA</strong></p>
+          <p class="card-subtitle text-muted" style="font-size: 90%;">TBA</p>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% include sponsors.html %}

@@ -1,0 +1,31 @@
+<div class="card">
+  <div class="card-header text-white bg-inverse">
+    <i class="fa fa-newspaper-o mr-3" aria-hidden="true"></i>
+    <strong class="i18n" data-fr="Nouvelles" data-en="News">Nouvelles</strong>
+  </div>
+
+  <div class="card-block bg-faded">
+    <ul class="list-group list-group-flush">
+      {% if site.data.conference.news %}
+        {% for news_entry in site.data.conference.news %}
+          <li class="list-group-item bg-faded text-muted">
+            {{ news_entry.date | date: "%B %-d, %Y" }} –
+            {% if news_entry.text.fr or news_entry.text.en %}
+              <span class="i18n"
+                    data-fr="{{ news_entry.text.fr | escape }}"
+                    data-en="{{ news_entry.text.en | default: news_entry.text.fr | escape }}">
+                {{ news_entry.text.fr | escape }}
+              </span>
+            {% else %}
+              {{ news_entry.text }}
+            {% endif %}
+          </li>
+        {% endfor %}
+      {% else %}
+        <li class="list-group-item bg-faded text-muted i18n"
+            data-fr="À venir"
+            data-en="TBA">À venir</li>
+      {% endif %}
+    </ul>
+  </div>
+</div>
