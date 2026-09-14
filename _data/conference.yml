@@ -69,15 +69,15 @@ navbar:
     visible: true
 
 news:
-  - date: 2025-08-15
+  - date: 2026-09-14
     text: { fr: "Site en ligne", en: "Website online" }
-  - date: 2025-07-31
+  - date: 2026-09-03
     text: { fr: "Formation du comité", en: "Committee formed" }
 
 deadlines:
-  - date: 2025-10-03
-    text: { fr: "Journée étudiante Quantact 2025", en: "Quantact Student Day 2025" }
-  - date: 2025-08-18
+  - date: 2026-11-06
+    text: { fr: "Journée étudiante Quantact 2026", en: "Quantact Student Day 2026" }
+  - date: 2026-10-01
     text: { fr: "Inscriptions ouvertes", en: "Registration open" }
 
 sponsors:
