@@ -17,7 +17,6 @@
 
     - startTime: "9:30"
       endTime: "10:05"
-      type: "keynote"
       title:
         fr: "A"
         en: "A"
@@ -27,6 +26,7 @@
       chair:
         fr: "Comité d'organisation"
         en: "Organizing committee"
+      class: "bg-keynote"
 
     - startTime: "10:05"
       endTime: "10:40"
@@ -92,7 +92,6 @@
 
     - startTime: "13:45"
       endTime: "14:20"
-      type: "keynote"
       title:
         fr: "E"
         en: "E"
@@ -102,6 +101,7 @@
       chair:
         fr: "Comité d'organisation"
         en: "Organizing committee"
+      class: "bg-keynote"
         
     - startTime: "14:20"
       endTime: "14:55"
