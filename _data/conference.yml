@@ -1,5 +1,5 @@
-full_title: Journée Étudiante Quantact 2025
-short_title: Journée Étudiante Quantact
+full_title: Journée étudiante Quantact 2026
+short_title: Journée étudiante Quantact
 email_Maurin: ahanhanzo.maurin@courrier.uqam.ca
 email_Xavier: xavier.lefrancois.1@ulaval.ca
 
@@ -10,7 +10,7 @@ languages:
     description: >
       La Journée étudiante Quantact présente les travaux de recherche...
     location: Université du Québec à Montréal
-    date: 6 Novembre 2026
+    date: 6 novembre 2026
     logo_path: /assets/images/jeq_logo.png
   en:
     full_title: Quantact Student Day 2026
