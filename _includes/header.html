@@ -41,12 +41,6 @@
               <div class="carousel-item">
             {% endif %}
                 <img class="img-fluid" src="{{ slide.image_path | relative_url }}" alt="{{ slide.description }}">
-                <div class="carousel-caption d-none d-md-block text-muted">
-                  <p class="align-bottom">
-                    {{ slide.description }}, by <a href="{{ slide.photographer_link }}">{{ slide.photographer_name }}</a>,
-                    under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">Creative Commons license</a>.
-                  </p>
-                </div>
               </div>
           {% endfor %}
         </div>
