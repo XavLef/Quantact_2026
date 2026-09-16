@@ -23,8 +23,11 @@ slide_id: 2
           {% assign t_en = timeslot.title.en | default: timeslot.title | downcase %}
 
           {% assign slot_class = "bg-primary text-center" %}
+
           {% if timeslot.type == "service" %}
             {% assign slot_class = "bg-warning text-center" %}
+          {% elsif timeslot.type == "keynote" %}
+            {% assign slot_class = "bg-keynote text-center" %}
           {% endif %}
 
           <!-- Coffee / Break keywords (fr/en) -->
