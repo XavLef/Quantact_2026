@@ -26,7 +26,6 @@
       chair:
         fr: "Comité d'organisation"
         en: "Organizing committee"
-      class: "bg-keynote"
 
     - startTime: "10:05"
       endTime: "10:40"
@@ -101,7 +100,6 @@
       chair:
         fr: "Comité d'organisation"
         en: "Organizing committee"
-      class: "bg-keynote"
         
     - startTime: "14:20"
       endTime: "14:55"
