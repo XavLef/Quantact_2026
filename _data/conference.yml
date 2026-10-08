@@ -90,19 +90,19 @@ social_media:
 
 program_chair:
   - name: Maurin Ahanhanzo
-    org: Université du Québec à Montréal
+    org: {fr: "Université du Québec à Montréal", en: "Université du Québec à Montréal"}
     homepage: 
   - name: Vigny-Ange Sidjui Emakwa
-    org: Université du Québec à Montréal
+    org: {fr: "Université du Québec à Montréal", en: "Université du Québec à Montréal"}
     homepage:
   - name: Xavier Lefrançois
-    org: Université Laval
+    org: {fr: "Université Laval", en: "Université Laval"}
     homepage:
   - name: Guillaume Philion
-    org: Université de Sherbrooke
+    org: {fr: "Université de Sherbrooke", en: "Université de Sherbrooke"}
     homepage: 
   - name: Mohaé Ange Christian N'guessan
-    org: Université de Montréal
+    org: {fr: "Université de Montréal", en: "Université de Montréal"}
     homepage: 
   - name: Samaneh Sami Kermani
     org: {fr: "Université Concordia", en: "Concordia University"}
@@ -111,5 +111,5 @@ program_chair:
     org: {fr: "Université Concordia", en: "Concordia University"}
     homepage: 
   - name: Émile Gravel
-    org: HEC Montréal
+    org: {fr: "HEC Montréal", en: "HEC Montréal"}
     homepage: 
