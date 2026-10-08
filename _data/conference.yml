@@ -105,10 +105,10 @@ program_chair:
     org: Université de Montréal
     homepage: 
   - name: Samaneh Sami Kermani
-    org: {fr: Université Concordia, en: Concordia University}
+    org: {fr: "Université Concordia", en: "Concordia University"}
     homepage: 
   - name: Abena Farcor
-    org: {fr: Université Concordia, en: Concordia University}
+    org: {fr: "Université Concordia", en: "Concordia University"}
     homepage: 
   - name: Émile Gravel
     org: HEC Montréal
