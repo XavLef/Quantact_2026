@@ -77,7 +77,7 @@ news:
 deadlines:
   - date: 2026-11-06
     text: { fr: "Journée étudiante Quantact 2026", en: "Quantact Student Day 2026" }
-  - date: 2026-10-01
+  - date: 2026-10-08
     text: { fr: "Inscriptions ouvertes", en: "Registration open" }
 
 sponsors:
