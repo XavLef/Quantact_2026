@@ -19,11 +19,11 @@
       endTime: "10:25"
       type: "keynote"
       title:
-        fr: "A"
-        en: "A"
+        fr: "À venir"
+        en: "To be announced"
       speaker:
-        fr: "Étienne Larrivée (Co-operators)"
-        en: "Étienne Larrivée (Co-operators)"
+        fr: "Etienne Larrivée-Hardy (Co-operators)"
+        en: "Etienne Larrivée-Hardy (Co-operators)"
       chair:
         fr: "Comité d'organisation"
         en: "Organizing committee"
@@ -50,8 +50,8 @@
     - startTime: "11:25"
       endTime: "12:00"
       title:
-        fr: "C"
-        en: "C"
+        fr: "Optimal and Equilibrium Risk-Sharing Rules in Heterogeneous Tontines"
+        en: "Optimal and Equilibrium Risk-Sharing Rules in Heterogeneous Tontines"
       speaker:
         fr: "Ayoub Bakraoui (UdeS)"
         en: "Ayoub Bakraoui (UdeS)"
@@ -81,8 +81,8 @@
     - startTime: "14:00"
       endTime: "14:35"
       title:
-        fr: "D"
-        en: "D"
+        fr: "À venir"
+        en: "To be announced"
       speaker:
         fr: "Murilo Andre Peres Pereira (HEC)"
         en: "Murilo Andre Peres Pereira (HEC)"
@@ -93,8 +93,8 @@
     - startTime: "14:35"
       endTime: "15:10"
       title:
-        fr: "E"
-        en: "E"
+        fr: "A Study of the LHARG Model: Multi-Step Cumulants and GMM Estimation"
+        en: "A Study of the LHARG Model: Multi-Step Cumulants and GMM Estimation"
       speaker:
         fr: "Stephen Mikus (UdeM)"
         en: "Stephen Mikus (UdeM)"
