@@ -123,7 +123,12 @@ slide_id: 0
         <div class="card-block bg-faded committee">
           <p class="card-title">TBA</p>
           <p><strong>TBA</strong></p>
-          <p class="card-subtitle text-muted" style="font-size: 90%;">TBA</p>
+          <p class="card-subtitle text-muted i18n"
+             style="font-size: 90%;"
+             data-fr="{{ committee.org.fr }}"
+             data-en="{{ committee.org.en }}">
+            {{ committee.org.fr }}
+          </p>
         </div>
       {% endif %}
     </div>
