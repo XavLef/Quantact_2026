@@ -12,8 +12,8 @@
     - startTime: "9:30"
       endTime: "9:45"
       title:
-        fr: "Mot de bienvenue"
-        en: "Opening Remarks"
+        fr: "Allocution d'ouverture"
+        en: "Opening Speech"
 
     - startTime: "9:45"
       endTime: "10:25"
